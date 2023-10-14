@@ -1,4 +1,4 @@
-package number_programs
+package array_programs
 
 fun findFirstSecondLargestNumber(arr: IntArray): Pair<Int, Int> {
     var firstLargest = Int.MIN_VALUE
