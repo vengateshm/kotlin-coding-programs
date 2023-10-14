@@ -1,8 +1,8 @@
 package number_programs
 
 fun maxOfThreeNumbers(a: Int, b: Int, c: Int): Int {
-    return if (a > b && a > c) a
-    else if (b > a && b > c) b
+    return if (a >= b && a >= c) a
+    else if (b >= a && b >= c) b
     else c
 }
 
