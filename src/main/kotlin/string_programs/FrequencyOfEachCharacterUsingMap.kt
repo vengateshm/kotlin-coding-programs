@@ -9,6 +9,11 @@ fun frequencyOfEachCharacterUsingMap(str: String): Map<Char, Int> {
     return freqMap
 }
 
+fun frequencyOfEachCharacterUsingMapConcise(str: String): Map<Char, Int> {
+    return str.groupingBy { it }.eachCount()
+}
+
 fun main() {
     println(frequencyOfEachCharacterUsingMap("radar"))
+    println(frequencyOfEachCharacterUsingMapConcise("radar"))
 }
