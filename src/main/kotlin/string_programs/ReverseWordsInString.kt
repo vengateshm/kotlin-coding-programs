@@ -18,6 +18,11 @@ fun reverse(str: String): String {
     return sb.toString()
 }
 
+fun reverseConcise(str: String): String {
+    return str.split(" ").joinToString(" ") { it.reversed() }
+}
+
 fun main() {
     println(reverseWordsInString("Hello Jetpack Compose"))
+    println(reverseConcise("Hello Jetpack Compose"))
 }
