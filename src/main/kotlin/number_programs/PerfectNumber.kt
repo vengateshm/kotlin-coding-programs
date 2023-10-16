@@ -6,8 +6,10 @@ import kotlin.math.sqrt
 // not have decimal places
 
 fun isPerfectNumber(num: Int): Boolean {
+    if (num < 0) return false // Negative numbers are not perfect squares
     val sqrt = sqrt(num.toDouble())
     return sqrt == sqrt.toInt().toDouble()
+    // Can use Math.floor() instead toInt().toDouble()
 }
 
 fun main() {
