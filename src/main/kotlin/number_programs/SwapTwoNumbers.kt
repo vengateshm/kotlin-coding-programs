@@ -1,16 +1,16 @@
-package basic_programs
+package number_programs
 
 fun main() {
     var a = 10
     var b = 20
 
-    println("Before swap")
+    println("After swap")
     println("a $a")
     println("b $b")
 
-    a += b
-    b = a - b
-    a -= b
+    val temp = a
+    a = b
+    b = temp
 
     println("After swap")
     println("a $a")
